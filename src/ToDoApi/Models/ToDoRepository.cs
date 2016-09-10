@@ -6,7 +6,7 @@ namespace ToDoApi.Models
 {
     internal class ToDoRepository : IToDoRepository
     {
-        private static ConcurrentDictionary<string, ToDoItem> _toDos = new ConcurrentDictionary<string, ToDoItem>();
+        private static readonly ConcurrentDictionary<string, ToDoItem> _toDos = new ConcurrentDictionary<string, ToDoItem>();
 
         public ToDoRepository()
         {
